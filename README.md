@@ -4,6 +4,8 @@ sudo apt-get install qemu qemu-user-static
 export DOCKER_CLI_AARCH64=1
 docker buildx create --use
 docker buildx build --platform linux/arm64 -t your-image-name:tag .
+or 
+docker buildx build --platform linux/arm64 -t your-image-name:tag --load .
 ```
 
 
