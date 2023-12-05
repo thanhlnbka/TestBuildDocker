@@ -15,3 +15,5 @@ sudo apt-get install qemu-user-static
 docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 docker run --rm -it --network host your-image-name:tag
 ```
+# Show architecture image
+docker inspect --format '{{.Architecture}}' your-image-name:tag
